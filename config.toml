@@ -1,94 +1,64 @@
-baseurl = "https://zedr.rbind.io"
-DefaultContentLanguage = "en"
-#DefaultContentLanguage = "ja"
-title = "Zedr Blog"
-theme = "beautifulhugo"
-metaDataFormat = "yaml"
-pygmentsUseClasses = true
-pygmentCodeFences = true
-disqusShortname = "asimumba"
-#googleAnalytics = "XXX"
+baseurl         = "https://zedr.rbind.io/"
+theme = "hugo-casper-two"
+languageCode    = "en-US"
+disqusShortname = ""
+paginate        = 6
+#SectionPagesMenu = "main"
+canonifyurls    = true
 
-[Params]
-  subtitle = "Build a beautiful and simple website in minutes"
-  logo = "img/avatar-icon.png"
-  favicon = "img/favicon.ico"
-  dateFormat = "January 2, 2006"
-  commit = false
-  rss = true
-  comments = true
-#  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
+[params]
+  title       = "Hugo Casper Two"
+  subtitle    = "Port of Casper 2.x for Hugo"
+  copyright   = "© 2018"
 
-#[[Params.bigimg]]
-#  src = "img/triangle.jpg"
-#  desc = "Triangle"
-#[[Params.bigimg]]
-#  src = "img/sphere.jpg"
-#  desc = "Sphere"
-#  # position: see values of CSS background-position.
-#  position = "center top"
-#[[Params.bigimg]]
-#  src = "img/hexagon.jpg"
-#  desc = "Hexagon"
+  cover       = "img/blog-cover.jpg"
+  description = "Here is a description of your site."
+  metaDescription = ""
+  googleAnalytics = ""
+  customCSS = []
+  RSSLink = ""
 
-[Author]
-  name = "Aaron Simumba"
-  website = "asimumba.rbind.io"
-  email = "simumba21@gmail.com"
-  facebook = "username"
-  googleplus = "+username" # or xxxxxxxxxxxxxxxxxxxxx
-  github = "username"
-  gitlab = "username"
-  twitter = "username"
-  reddit = "username"
-  linkedin = "username"
-  xing = "username"
-  stackoverflow = "users/XXXXXXX/username"
-  snapchat = "username"
-  instagram = "username"
-  youtube = "user/username" # or channel/channelname
-  soundcloud = "username"
-  spotify = "username"
-  bandcamp = "username"
-  itchio = "username"
-  vk = "username"
-  paypal = "username"
-  telegram = "username"
+  twitterName = "faketryghost"
+  fbName = "fakeghost"
+  githubName = "eueung"
+
+  logo = "hugo-logo.png"
+  orgName = "EM"
+  orgWebsite = "https://www.telematika.org"
+  orgDescription = "Here is a description placeholder for your org"
+
+  author = "EM"
+  authorAvatar = "img/ghost-icon.png"
+  authorLocation = "Bandung, ID"
+  authorWebsite = "https://eueung.github.io"
+  authorDescription = "Your description here"
+
+  pageNotFoundTitle = "404 - Page not found"
+
+  #casper or caspertwo
+  singleViewStyle = "casper"
+
+[permalinks]
+  post = "/post/:slug/"
 
 [[menu.main]]
-    name = "Blog"
-    url = ""
-    weight = 1
+  name = "Home"
+  url = "/"
+  weight = 200
 
 [[menu.main]]
-    name = "About"
-    url = "page/about/"
-    weight = 3
+  name = "Go"
+  url = "/tags/golang/"
+  weight = 100
 
 [[menu.main]]
-    identifier = "samples"
-    name = "Samples"
-    weight = 2
+  name = "Categories"
+  url = "/categories/"
+  weight = 99
 
 [[menu.main]]
-    parent = "samples"
-    name = "Big Image Sample"
-    url = "post/2017-03-07-bigimg-sample"
-    weight = 1
+  name = "External"
+  url = "https://google.com/"
+  weight = 95
 
-[[menu.main]]
-    parent = "samples"
-    name = "Math Sample"
-    url = "post/2017-03-05-math-sample"
-    weight = 2
 
-[[menu.main]]
-    parent = "samples"
-    name = "Code Sample"
-    url = "post/2016-03-08-code-sample"
-    weight = 3
-
-[[menu.main]]
-    name = "Tags"
-    url = "tags"
-    weight = 3
